@@ -1,0 +1,15 @@
+{% load i18n %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% trans "Confirm Delete" %}</title>
+</head>
+<body>
+    <h1>{% trans "Are you sure you want to delete" %} "{{ article.title }}"?</h1>
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit">{% trans "Confirm" %}</button>
+    </form>
+    <a href="{% url 'article_detail' article.id %}">{% trans "Cancel" %}</a>
+</body>
+</html>

@@ -1,0 +1,123 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-06-21 02:14+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\main\templates\main\article_detail.html:4
+#: .\main\templates\main\article_detail.html:11
+msgid "Article Details"
+msgstr ""
+
+#: .\main\templates\main\article_detail.html:17
+#: .\main\templates\main\index.html:45
+msgid "Author:"
+msgstr ""
+
+#: .\main\templates\main\article_detail.html:18
+#: .\main\templates\main\index.html:46
+msgid "Category:"
+msgstr ""
+
+#: .\main\templates\main\article_detail.html:19
+#: .\main\templates\main\index.html:44
+msgid "Published on:"
+msgstr ""
+
+#: .\main\templates\main\article_detail.html:21
+msgid "Back to Articles"
+msgstr ""
+
+#: .\main\templates\main\base.html:6 .\main\templates\main\base.html:12
+msgid "My Blog"
+msgstr ""
+
+#: .\main\templates\main\base.html:14
+msgid "Home"
+msgstr ""
+
+#: .\main\templates\main\base.html:15 .\main\templates\main\index.html:6
+#: .\main\templates\main\index.html:18
+msgid "Articles"
+msgstr ""
+
+#: .\main\templates\main\base.html:16
+msgid "Create New Article"
+msgstr ""
+
+#: .\main\templates\main\index.html:4 .\main\templates\main\index.html:13
+msgid "Blog Articles"
+msgstr ""
+
+#: .\main\templates\main\index.html:22
+msgid "Search articles"
+msgstr ""
+
+#: .\main\templates\main\index.html:23
+msgid "Search"
+msgstr ""
+
+#: .\main\templates\main\index.html:28
+msgid "Search Results"
+msgstr ""
+
+#: .\main\templates\main\index.html:47
+#: .\main\templates\main\list_articles.html:25
+msgid "Read more"
+msgstr ""
+
+#: .\main\templates\main\index.html:53
+msgid "Chatbot"
+msgstr ""
+
+#: .\main\templates\main\index.html:56
+msgid "Enter your message:"
+msgstr ""
+
+#: .\main\templates\main\index.html:58
+msgid "Send"
+msgstr ""
+
+#: .\main\templates\main\index.html:61
+msgid "Response"
+msgstr ""
+
+#: .\main\templates\main\list_articles.html:4
+#: .\main\templates\main\list_articles.html:11
+#: .\main\templates\main\list_articles.html:18
+msgid "List of Articles"
+msgstr ""
+
+#: .\main\templates\main\list_articles.html:24
+msgid "Published on"
+msgstr ""
+
+#: .\main\templates\main\list_articles.html:24
+msgid "Author"
+msgstr ""
+
+#: .\main\templates\main\list_articles.html:24
+msgid "Category"
+msgstr ""
+
+#: .\multilang_site\settings.py:102
+msgid "English"
+msgstr ""
+
+#: .\multilang_site\settings.py:103
+msgid "Français"
+msgstr ""

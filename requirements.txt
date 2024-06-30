@@ -1,0 +1,17 @@
+
+openai
+transformers 
+datasets 
+faiss-cpu
+numpy
+torch 
+torchvision 
+torchaudio
+tensorflow
+djangorestframework
+djangorestframework-simplejwt
+django-cors-headers
+gunicorn
+requests
+python-decouple
+python-dotenv

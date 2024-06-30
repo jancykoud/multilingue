@@ -1,0 +1,63 @@
+{% load i18n static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% trans "Article List" %}</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}"> <!-- Assuming you have a styles.css in your static/css directory -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        form {
+            display: inline;
+        }
+        button, a.button {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        a.button {
+            background-color: #008CBA; /* Blue */
+        }
+    </style>
+</head>
+<body>
+    <h1>{% trans "Articles" %}</h1>
+    <a href="{% url 'article_create' %}" class="button">{% trans "Create Article" %}</a>
+    <a href="{% url 'index' %}" class="button">{% trans "Go Back Home" %}</a>
+    <ul>
+        {% for article in articles %}
+        <li>
+            <a href="{% url 'article_detail' article.id %}">{{ article.title }}</a>
+            <form action="{% url 'article_delete' article.id %}" method="post">
+                {% csrf_token %}
+                <button type="submit">{% trans "Delete" %}</button>
+            </form>
+        </li>
+        {% endfor %}
+    </ul>
+    <form action="{% url 'change_language' 'en' %}" method="post">{% csrf_token %}
+        <button type="submit">English</button>
+    </form>
+    <form action="{% url 'change_language' 'fr' %}" method="post">{% csrf_token %}
+        <button type="submit">Français</button>
+    </form>
+</body>
+</html>

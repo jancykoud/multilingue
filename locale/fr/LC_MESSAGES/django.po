@@ -1,0 +1,142 @@
+msgid ""
+msgstr ""
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-06-29 02:12+0200\n"
+"Language: fr\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+
+#: .\main\templates\main\article_confirm_delete.html:5
+msgid "Confirm Delete"
+msgstr ""
+
+#: .\main\templates\main\article_confirm_delete.html:8
+msgid "Are you sure you want to delete"
+msgstr ""
+
+#: .\main\templates\main\article_confirm_delete.html:11
+msgid "Confirm"
+msgstr ""
+
+#: .\main\templates\main\article_confirm_delete.html:13
+msgid "Cancel"
+msgstr ""
+
+#: .\main\templates\main\article_detail.html:10
+#: .\main\templates\main\create_article.html:17
+#, fuzzy
+#| msgid "Author:"
+msgid "Author"
+msgstr "Auteur :"
+
+#: .\main\templates\main\article_detail.html:11
+#: .\main\templates\main\create_article.html:20
+#, fuzzy
+#| msgid "Category:"
+msgid "Category"
+msgstr "Catégorie :"
+
+#: .\main\templates\main\article_detail.html:12
+msgid "Edit"
+msgstr ""
+
+#: .\main\templates\main\create_article.html:5
+#: .\main\templates\main\create_article.html:8
+#, fuzzy
+#| msgid "Articles"
+msgid "Article Form"
+msgstr "Articles"
+
+#: .\main\templates\main\create_article.html:11
+msgid "Title"
+msgstr ""
+
+#: .\main\templates\main\create_article.html:14
+msgid "Content"
+msgstr ""
+
+#: .\main\templates\main\create_article.html:27
+msgid "Save"
+msgstr ""
+
+#: .\main\templates\main\index.html:3
+msgid "Blog Articles"
+msgstr "Articles de Blog"
+
+#: .\main\templates\main\index.html:6
+#: .\main\templates\main\list_articles.html:8
+msgid "Articles"
+msgstr "Articles"
+
+#: .\main\templates\main\index.html:9
+msgid "Search articles"
+msgstr "Rechercher des articles"
+
+#: .\main\templates\main\index.html:10
+msgid "Search"
+msgstr "Recherche"
+
+#: .\main\templates\main\index.html:15
+msgid "Search Results"
+msgstr "Résultats de la recherche"
+
+#: .\main\templates\main\index.html:31
+msgid "Published on:"
+msgstr "Publié le :"
+
+#: .\main\templates\main\index.html:32
+msgid "Author:"
+msgstr "Auteur :"
+
+#: .\main\templates\main\index.html:33
+msgid "Category:"
+msgstr "Catégorie :"
+
+#: .\main\templates\main\index.html:34
+msgid "Read more"
+msgstr "Lire la suite"
+
+#: .\main\templates\main\index.html:40
+msgid "Chatbot"
+msgstr "Chatbot"
+
+#: .\main\templates\main\index.html:43
+msgid "Enter your message:"
+msgstr "Entrez votre message :"
+
+#: .\main\templates\main\index.html:45
+msgid "Send"
+msgstr "Envoyer"
+
+#: .\main\templates\main\index.html:48
+msgid "Response"
+msgstr "Réponse"
+
+#: .\main\templates\main\list_articles.html:5
+#, fuzzy
+#| msgid "Articles"
+msgid "Article List"
+msgstr "Articles"
+
+#: .\main\templates\main\list_articles.html:9
+#, fuzzy
+#| msgid "Back to Articles"
+msgid "Create Article"
+msgstr "Retour aux articles"
+
+#: .\main\templates\main\list_articles.html:16
+msgid "Delete"
+msgstr ""
+
+#: .\multilang_site\settings.py:102
+msgid "English"
+msgstr "Anglais"
+
+#: .\multilang_site\settings.py:103
+msgid "Français"
+msgstr "Français"
+
+#~ msgid "Article Details"
+#~ msgstr "Détails de l'article"
+
+#~ msgid "List of Articles"
+#~ msgstr "Liste des articles"

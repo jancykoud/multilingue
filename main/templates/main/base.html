@@ -1,0 +1,25 @@
+{% load i18n %}
+<!DOCTYPE html>
+<html lang="{{ LANGUAGE_CODE }}">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    {% load static i18n %}
+    <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <header>
+        <h1>{% block header %}{% endblock %}</h1>
+        <div>
+            <a href="{% url 'change_language' 'en' %}">English</a> |
+            <a href="{% url 'change_language' 'fr' %}">Français</a>
+        </div>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    <footer>
+        <p>{% block footer %}{% endblock %}</p>
+    </footer>
+</body>
+</html>

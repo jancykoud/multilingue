@@ -1,0 +1,90 @@
+{% extends "main/base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "Homepage" %}{% endblock %}
+
+{% block content %}
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        margin: 20px;
+        color: #333;
+        background-color: #f4f4f4;
+    }
+    h1 {
+        color: #0a0a0a;
+    }
+    form {
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+    input[type="text"], input[type="submit"], button {
+        padding: 10px;
+        margin-right: 10px;
+        border: none;
+        border-radius: 5px;
+    }
+    input[type="text"] {
+        width: 300px;
+    }
+    button, input[type="submit"] {
+        background-color: #5cb85c;
+        color: white;
+        cursor: pointer;
+    }
+    button:hover, input[type="submit"]:hover {
+        background-color: #449d44;
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+    li {
+        background: white;
+        margin-bottom: 10px;
+        padding: 20px;
+        border-radius: 8px;
+    }
+    a {
+        color: #337ab7;
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+</style>
+<h1>{% trans "Welcome to the Blog" %}</h1>
+
+<!-- Search Form -->
+<form action="{% url 'index' %}" method="get">
+    <input type="text" name="q" placeholder="{% trans 'Search articles...' %}" required>
+    <input type="submit" value="{% trans 'Search' %}">
+</form>
+
+<!-- Display articles -->
+<ul>
+    {% for article in articles %}
+    <li>
+        <h2>{{ article.title }}</h2>
+        <p>{{ article.content|truncatewords:30 }}</p>
+        <a href="{% url 'article_detail' article.id %}">{% trans "Read more" %}</a>
+    </li>
+    {% empty %}
+    <li>{% trans "No articles found." %}</li>
+    {% endfor %}
+</ul>
+
+<!-- Chatbot form -->
+<form method="post" action="{% url 'index' %}">
+    {% csrf_token %}
+    <input type="text" name="message" placeholder="{% trans 'Ask me anything...' %}" required>
+    <input type="submit" value="{% trans 'Send' %}">
+</form>
+{% if chat_response %}
+    <p><strong>{% trans "Chatbot says:" %}</strong> {{ chat_response }}</p>
+{% endif %}
+
+<a href="{% url 'article_create' %}"><button>{% trans "Create New Article" %}</button></a>
+<a href="{% url 'list_articles' %}"><button>{% trans "View My Articles" %}</button></a>
+{% endblock %}

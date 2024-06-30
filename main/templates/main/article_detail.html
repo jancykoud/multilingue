@@ -1,0 +1,14 @@
+{% load i18n %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ article.title }}</title>
+</head>
+<body>
+    <h1>{{ article.title }}</h1>
+    <p>{{ article.content }}</p>
+    <p>{% trans "Author" %}: {{ article.author }}</p>
+    <p>{% trans "Category" %}: {{ article.category.name }}</p>
+    <a href="{% url 'article_update' article.id %}">{% trans "Edit" %}</a>
+</body>
+</html>
